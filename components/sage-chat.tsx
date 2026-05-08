@@ -92,7 +92,7 @@ export function SageChat() {
           />
           <Button 
             onClick={handleSend}
-            className="bg-burnt-orange hover:bg-burnt-orange/90"
+            className="bg-light-blue text-navy hover:bg-light-blue/90"
           >
             <Send className="h-4 w-4" />
           </Button>

@@ -134,8 +134,8 @@ export default function ReportsPage() {
         </div>
         <div className="rounded-xl border border-light-blue/30 bg-card p-4 shadow-sm">
           <div className="flex items-center gap-3">
-            <div className="rounded-lg bg-burnt-orange/10 p-2">
-              <Send className="h-5 w-5 text-burnt-orange" />
+            <div className="rounded-lg bg-light-blue/30 p-2">
+              <Send className="h-5 w-5 text-navy" />
             </div>
             <div>
               <p className="text-sm text-muted-foreground">Total Sent (Month)</p>
@@ -307,7 +307,7 @@ export default function ReportsPage() {
                       <p className="font-[var(--font-bebas)] text-2xl text-navy">
                         {data.value.toLocaleString()}
                       </p>
-                      <p className={`text-xs ${data.change >= 0 ? "text-green-600" : "text-burnt-orange"}`}>
+                      <p className={`text-xs ${data.change >= 0 ? "text-green-600" : "text-red-500"}`}>
                         {data.change >= 0 ? "+" : ""}{data.change}% vs last week
                       </p>
                     </div>
@@ -376,7 +376,7 @@ export default function ReportsPage() {
                           <td className="px-4 py-2 text-sm text-navy">{kw.keyword}</td>
                           <td className="px-4 py-2 text-center font-medium text-navy">#{kw.position}</td>
                           <td className="px-4 py-2 text-center">
-                            <span className={`text-sm ${kw.change > 0 ? "text-green-600" : "text-burnt-orange"}`}>
+                            <span className={`text-sm ${kw.change > 0 ? "text-green-600" : "text-red-500"}`}>
                               {kw.change > 0 ? `↑${kw.change}` : `↓${Math.abs(kw.change)}`}
                             </span>
                           </td>
@@ -396,7 +396,7 @@ export default function ReportsPage() {
                   <ul className="space-y-2">
                     {mockReportData.highlights.map((item, idx) => (
                       <li key={idx} className="flex items-start gap-2 text-sm text-navy">
-                        <ChevronRight className="mt-0.5 h-4 w-4 text-burnt-orange" />
+                        <ChevronRight className="mt-0.5 h-4 w-4 text-light-blue" />
                         {item}
                       </li>
                     ))}
@@ -422,7 +422,7 @@ export default function ReportsPage() {
                 <Button variant="outline" onClick={() => setIsPreviewOpen(false)}>
                   Close
                 </Button>
-                <Button className="bg-burnt-orange hover:bg-burnt-orange/90">
+                <Button className="bg-light-blue text-navy hover:bg-light-blue/90">
                   <Sparkles className="mr-2 h-4 w-4" />
                   Regenerate
                 </Button>

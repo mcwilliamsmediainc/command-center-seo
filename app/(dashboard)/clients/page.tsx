@@ -268,7 +268,7 @@ export default function ClientsPage() {
               <span className={`rounded-full px-2.5 py-0.5 text-xs font-medium ${
                 client.status === "active" 
                   ? "bg-green-100 text-green-700" 
-                  : "bg-burnt-orange/10 text-burnt-orange"
+                  : "bg-amber-100 text-amber-700"
               }`}>
                 {client.status === "active" ? "Active" : "Needs Attention"}
               </span>
@@ -312,7 +312,7 @@ export default function ClientsPage() {
                 </div>
                 <div className="h-2 overflow-hidden rounded-full bg-light-blue/30">
                   <div 
-                    className="h-full rounded-full bg-burnt-orange transition-all"
+                    className="h-full rounded-full bg-light-blue transition-all"
                     style={{ width: `${client.taskProgress}%` }}
                   />
                 </div>

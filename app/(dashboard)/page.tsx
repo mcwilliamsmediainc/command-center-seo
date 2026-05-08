@@ -110,7 +110,7 @@ export default function DashboardPage() {
                   className="flex items-center gap-3 rounded-lg border border-light-blue/30 bg-off-white/50 p-3"
                 >
                   <div className={`h-2 w-2 rounded-full ${
-                    task.priority === "high" ? "bg-burnt-orange" :
+                    task.priority === "high" ? "bg-red-500" :
                     task.priority === "medium" ? "bg-slate-blue" : "bg-light-blue"
                   }`} />
                   <div className="flex-1 min-w-0">

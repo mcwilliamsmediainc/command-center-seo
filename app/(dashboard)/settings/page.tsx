@@ -73,7 +73,7 @@ export default function SettingsPage() {
             </h2>
             <form className="space-y-6">
               <div className="flex items-start gap-6">
-                <div className="flex h-24 w-24 items-center justify-center rounded-full bg-burnt-orange text-2xl font-bold text-white">
+                <div className="flex h-24 w-24 items-center justify-center rounded-full bg-light-blue text-2xl font-bold text-navy">
                   JM
                 </div>
                 <div className="flex-1 space-y-4">
@@ -239,7 +239,7 @@ export default function SettingsPage() {
                   <div className="flex items-center gap-4">
                     <span className={`rounded-full px-3 py-1 text-xs font-medium ${
                       member.role === "Admin" 
-                        ? "bg-burnt-orange/10 text-burnt-orange"
+                        ? "bg-navy/10 text-navy font-semibold"
                         : "bg-light-blue/30 text-navy"
                     }`}>
                       {member.role}

@@ -57,12 +57,12 @@ const initialTasks: Task[] = [
 const categoryConfig = {
   content: { icon: FileText, color: "border-l-navy", label: "Content" },
   gbp: { icon: MapPin, color: "border-l-slate-blue", label: "GBP" },
-  reviews: { icon: Star, color: "border-l-burnt-orange", label: "Reviews" },
+  reviews: { icon: Star, color: "border-l-amber-500", label: "Reviews" },
   seo: { icon: Search, color: "border-l-light-blue", label: "SEO" },
 }
 
 const priorityConfig = {
-  high: { color: "bg-burnt-orange text-white", label: "High" },
+  high: { color: "bg-red-500 text-white", label: "High" },
   medium: { color: "bg-slate-blue text-white", label: "Medium" },
   low: { color: "bg-light-blue text-navy", label: "Low" },
 }

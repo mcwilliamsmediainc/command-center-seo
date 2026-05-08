@@ -180,7 +180,7 @@ export default function ContentPage() {
                       <span className="text-sm font-medium text-navy">SEO Score</span>
                       <span className={`text-lg font-bold ${
                         seoScore >= 80 ? "text-green-600" : 
-                        seoScore >= 60 ? "text-yellow-600" : "text-burnt-orange"
+                        seoScore >= 60 ? "text-yellow-600" : "text-red-500"
                       }`}>
                         {seoScore}/100
                       </span>
@@ -189,7 +189,7 @@ export default function ContentPage() {
                       <div 
                         className={`h-full rounded-full transition-all ${
                           seoScore >= 80 ? "bg-green-500" : 
-                          seoScore >= 60 ? "bg-yellow-500" : "bg-burnt-orange"
+                          seoScore >= 60 ? "bg-yellow-500" : "bg-red-500"
                         }`}
                         style={{ width: `${seoScore}%` }}
                       />
@@ -200,7 +200,7 @@ export default function ContentPage() {
                     <Button 
                       type="button" 
                       variant="outline" 
-                      className="text-burnt-orange border-burnt-orange hover:bg-burnt-orange/10"
+                      className="text-light-blue border-light-blue hover:bg-light-blue/10"
                     >
                       <Sparkles className="mr-2 h-4 w-4" />
                       Generate with Sage
@@ -234,7 +234,7 @@ export default function ContentPage() {
                       key={idx} 
                       className="rounded-lg border border-light-blue/30 bg-card p-2 shadow-sm cursor-pointer hover:shadow-md transition-shadow"
                     >
-                      <p className="text-[10px] font-medium text-burnt-orange">{post.client}</p>
+                      <p className="text-[10px] font-medium text-slate-blue">{post.client}</p>
                       <p className="text-xs text-navy line-clamp-2">{post.title}</p>
                     </div>
                   ))}
@@ -339,7 +339,7 @@ export default function ContentPage() {
                   <div className="flex justify-between pt-2">
                     <Button 
                       type="button" 
-                      className="bg-burnt-orange hover:bg-burnt-orange/90"
+                      className="bg-light-blue text-navy hover:bg-light-blue/90"
                     >
                       <Sparkles className="mr-2 h-4 w-4" />
                       Generate with Sage

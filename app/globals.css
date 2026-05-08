@@ -25,16 +25,16 @@
   --secondary-foreground: #061e57;
   --muted: #f5f0eb;
   --muted-foreground: #3a4856;
-  --accent: #7c370c;
-  --accent-foreground: #ffffff;
-  --destructive: #7c370c;
+  --accent: #b3cee1;
+  --accent-foreground: #061e57;
+  --destructive: #dc2626;
   --destructive-foreground: #ffffff;
   --border: #b3cee1;
   --input: #b3cee1;
   --ring: #061e57;
   --chart-1: #061e57;
   --chart-2: #3a4856;
-  --chart-3: #7c370c;
+  --chart-3: #5b9bcc;
   --chart-4: #b3cee1;
   --chart-5: #d8bfa7;
   --radius: 0.5rem;
@@ -42,12 +42,12 @@
   /* Sidebar */
   --sidebar: #061e57;
   --sidebar-foreground: #ffffff;
-  --sidebar-primary: #7c370c;
-  --sidebar-primary-foreground: #ffffff;
+  --sidebar-primary: #b3cee1;
+  --sidebar-primary-foreground: #061e57;
   --sidebar-accent: rgba(255, 255, 255, 0.1);
   --sidebar-accent-foreground: #ffffff;
   --sidebar-border: rgba(255, 255, 255, 0.1);
-  --sidebar-ring: #7c370c;
+  --sidebar-ring: #b3cee1;
 }
 
 @theme inline {

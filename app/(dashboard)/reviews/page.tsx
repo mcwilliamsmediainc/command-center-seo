@@ -148,20 +148,20 @@ Peak Fitness Management`,
 
       {/* Urgent Alert Banner */}
       {urgentReviews.length > 0 && (
-        <div className="mb-6 flex items-center gap-3 rounded-xl border border-burnt-orange/30 bg-burnt-orange/10 p-4">
-          <div className="rounded-lg bg-burnt-orange p-2">
+        <div className="mb-6 flex items-center gap-3 rounded-xl border border-red-300 bg-red-50 p-4">
+          <div className="rounded-lg bg-red-500 p-2">
             <AlertTriangle className="h-5 w-5 text-white" />
           </div>
           <div className="flex-1">
-            <p className="font-medium text-burnt-orange">
+            <p className="font-medium text-red-700">
               {urgentReviews.length} negative review{urgentReviews.length > 1 ? 's' : ''} need{urgentReviews.length === 1 ? 's' : ''} immediate attention
             </p>
-            <p className="text-sm text-burnt-orange/80">
+            <p className="text-sm text-red-600">
               Respond to 1-2 star reviews within 24 hours to protect client reputation
             </p>
           </div>
           <Button 
-            className="bg-burnt-orange hover:bg-burnt-orange/90"
+            className="bg-red-500 hover:bg-red-600"
             onClick={() => urgentReviews[0] && handleAIDraft(urgentReviews[0])}
           >
             <Sparkles className="mr-2 h-4 w-4" />
@@ -193,7 +193,7 @@ Peak Fitness Management`,
             key={review.id}
             className={`rounded-xl border bg-card p-6 shadow-sm ${
               review.rating <= 2 && review.status === "pending"
-                ? "border-burnt-orange/50"
+                ? "border-red-300"
                 : "border-light-blue/30"
             }`}
           >
@@ -204,7 +204,7 @@ Peak Fitness Management`,
                   ? "bg-green-100 text-green-700"
                   : review.rating === 3
                     ? "bg-yellow-100 text-yellow-700"
-                    : "bg-burnt-orange/10 text-burnt-orange"
+                    : "bg-red-100 text-red-700"
               }`}>
                 {review.rating}
               </div>
@@ -249,7 +249,7 @@ Peak Fitness Management`,
                       </Button>
                       <Button
                         size="sm"
-                        className="bg-burnt-orange hover:bg-burnt-orange/90"
+                        className="bg-light-blue text-navy hover:bg-light-blue/90"
                         onClick={() => handleAIDraft(review)}
                       >
                         <Sparkles className="mr-1 h-3.5 w-3.5" />
@@ -299,13 +299,13 @@ Peak Fitness Management`,
               {/* AI Draft */}
               <div>
                 <div className="mb-2 flex items-center gap-2">
-                  <Sparkles className="h-4 w-4 text-burnt-orange" />
+                  <Sparkles className="h-4 w-4 text-light-blue" />
                   <span className="text-sm font-medium text-navy">Sage&apos;s Suggested Response</span>
                 </div>
                 {isGenerating ? (
                   <div className="flex h-40 items-center justify-center rounded-lg border border-light-blue/30 bg-card">
                     <div className="flex items-center gap-2 text-muted-foreground">
-                      <div className="h-4 w-4 animate-spin rounded-full border-2 border-burnt-orange border-t-transparent" />
+                      <div className="h-4 w-4 animate-spin rounded-full border-2 border-light-blue border-t-transparent" />
                       Sage is crafting a response...
                     </div>
                   </div>

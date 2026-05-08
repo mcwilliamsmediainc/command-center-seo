@@ -49,7 +49,7 @@ const keywords: Keyword[] = [
 const difficultyColors = {
   easy: "bg-green-100 text-green-700",
   medium: "bg-yellow-100 text-yellow-700",
-  hard: "bg-burnt-orange/10 text-burnt-orange",
+  hard: "bg-red-100 text-red-700",
 }
 
 export default function KeywordsPage() {
@@ -68,7 +68,7 @@ export default function KeywordsPage() {
   const getPositionChange = (current: number, previous: number) => {
     const change = previous - current
     if (change > 0) return { icon: TrendingUp, color: "text-green-600", text: `+${change}` }
-    if (change < 0) return { icon: TrendingDown, color: "text-burnt-orange", text: `${change}` }
+    if (change < 0) return { icon: TrendingDown, color: "text-red-500", text: `${change}` }
     return { icon: Minus, color: "text-muted-foreground", text: "0" }
   }
 
@@ -169,8 +169,8 @@ export default function KeywordsPage() {
         </div>
         <div className="rounded-xl border border-light-blue/30 bg-card p-4 shadow-sm">
           <div className="flex items-center gap-3">
-            <div className="rounded-lg bg-burnt-orange/10 p-2">
-              <TrendingDown className="h-5 w-5 text-burnt-orange" />
+            <div className="rounded-lg bg-red-100 p-2">
+              <TrendingDown className="h-5 w-5 text-red-500" />
             </div>
             <div>
               <p className="text-sm text-muted-foreground">Declined</p>

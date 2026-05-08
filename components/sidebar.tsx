@@ -33,7 +33,7 @@ export function Sidebar() {
       <div className="flex h-full flex-col">
         {/* Logo */}
         <div className="flex items-center gap-2 px-6 py-6">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-burnt-orange">
+          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-light-blue">
             <span className="font-[var(--font-bebas)] text-lg font-bold text-white">M</span>
           </div>
           <span className="font-[var(--font-bebas)] text-xl tracking-wide text-white">
@@ -55,7 +55,7 @@ export function Sidebar() {
                 className={cn(
                   "flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-all",
                   isActive
-                    ? "border-l-4 border-burnt-orange bg-white/10 text-white"
+                    ? "border-l-4 border-light-blue bg-white/10 text-white"
                     : "text-white/70 hover:bg-white/5 hover:text-white"
                 )}
               >
@@ -69,7 +69,7 @@ export function Sidebar() {
         {/* User section */}
         <div className="border-t border-white/10 p-4">
           <div className="flex items-center gap-3">
-            <div className="flex h-9 w-9 items-center justify-center rounded-full bg-burnt-orange text-sm font-medium text-white">
+            <div className="flex h-9 w-9 items-center justify-center rounded-full bg-light-blue text-sm font-medium text-navy">
               JM
             </div>
             <div>
